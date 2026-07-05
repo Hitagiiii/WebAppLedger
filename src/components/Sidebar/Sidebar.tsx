@@ -1,12 +1,26 @@
 import { useState } from "react";
 import './Sidebar.css';
 
+import { MdOutlineDashboard, } from "react-icons/md";
+import { IoBookOutline } from "react-icons/io5";
+import { GrTransaction } from "react-icons/gr";
+import { LuWallet, LuGoal } from "react-icons/lu";
+import { SiSimpleanalytics } from "react-icons/si";
+import { FaRegCalendarAlt } from "react-icons/fa";
+import { CiSettings } from "react-icons/ci";
+
+
+
+
+
+
+
 /* =================================
     TYPES
 ================================= */
 type NavItem = {
     label: string;
-    icon: string;
+    icon: React.ReactNode;
     link: string;
 };
 
@@ -16,15 +30,14 @@ type SidebarProps = {
 
 export default function Sidebar({ activeItem }: SidebarProps) {
     const [navItems] = useState<NavItem[]>([
-        { label: 'Dashboard', icon: 'dashboard', link: '/dashboard' },
-        { label: 'Ledger', icon: 'ledger', link: '/ledger' },
-        { label: 'Transactions', icon: 'transactions', link: '/transactions' },
-        { label: 'Budget', icon: 'budget', link: '/budget' },
-        { label: 'Saving Goals', icon: 'saving-goals', link: '/saving-goals' },
-        { label: 'Debt & Loans', icon: 'debt-loans', link: '/debt-loans' },
-        { label: 'Analytics', icon: 'analytics', link: '/analytics' },
-        { label: 'Calendar', icon: 'calendar', link: '/calendar' },
-        { label: 'Settings', icon: 'settings', link: '/settings' },
+        { label: 'Dashboard', icon: <MdOutlineDashboard />, link: '/dashboard' },
+        { label: 'Ledger', icon: <IoBookOutline />, link: '/ledger' },
+        { label: 'Transactions', icon: <GrTransaction />, link: '/transactions' },
+        { label: 'Budget', icon: <LuWallet />, link: '/budget' },
+        { label: 'Debt & Loans', icon: <LuGoal />, link: '/debt-loans' },
+        { label: 'Analytics', icon: <SiSimpleanalytics />, link: '/analytics' },
+        { label: 'Calendar', icon: <FaRegCalendarAlt />, link: '/calendar' },
+        { label: 'Settings', icon: <CiSettings />, link: '/settings' },
     ]);
 
     return (
@@ -50,7 +63,7 @@ export default function Sidebar({ activeItem }: SidebarProps) {
                                     href={item.link} 
                                     className={`sidebar-link ${isActive ? 'active' : ''}`}
                                 >
-                                    <span className={`icon icon-${item.icon}`} aria-hidden="true" />
+                                    <span className="icon">{item.icon}</span>
                                     <span className="label">{item.label}</span>
                                 </a>
                             </li>
