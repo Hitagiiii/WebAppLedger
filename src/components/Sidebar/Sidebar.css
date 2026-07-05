@@ -1,0 +1,106 @@
+.sidebar {
+    display: flex;
+    width: 260px; /* Ensures the sidebar layout retains a structured width */
+    height: 100vh; 
+    padding: var(--spacing-md);
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    align-self: stretch;
+    background-color: var(--color-background-sidebar, #ffffff);
+    font-size: var(--text-md);
+}
+
+.sidebar-nav {
+    width: 100%;
+    flex: 1; /* Instructs navigation wrapper to span all structural flex space */
+}
+
+.sidebar-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    align-self: stretch;
+    flex-shrink: 0;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.sidebar-item {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-sm) var(--spacing-md);
+    gap: var(--spacing-sm);
+    text-decoration: none;
+    color: var(--color-navy);
+    border-radius: var(--radius-md); 
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sidebar-link.active {
+    background-color: var(--brand-surface);
+    color: var(--color-indigo);
+    border-left: 3px solid var(--color-lavender);
+}
+
+.sidebar-link:hover {
+    background-color: var(--color-primary-light);
+    color: var(--color-white);
+}
+
+
+/* HEADER */
+
+img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.sidebar-user {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-md) var(--spacing-ml);
+    gap: var(--spacing-sm);
+    width: 100%;
+    border-bottom: 1px solid var(--brand-border);
+    margin-bottom: var(--spacing-md);
+}
+
+.sidebar-user-info {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--text-sm);
+}
+
+.sidebar-user-email{
+    font-size: var(--text-xs);
+    color: var(--color-muted);
+}
+
+.sidebar-user-wrapper {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+/* FOOTER */
+.sidebar-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    margin-top: auto;
+    padding: var(--spacing-md);
+    font-weight: var(--weight-bold);
+    font-size: var(--text-sm);
+    color: var(--color-muted);
+    border-top: 1px solid var(--brand-border);
+}

@@ -1,0 +1,183 @@
+/* ==========================================
+   SAKURA LEDGER DESIGN SYSTEM
+   Anime-Inspired Finance Dashboard
+   ========================================== */
+
+   /* ============================================
+   GOOGLE FONTS
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap');
+
+:root {
+
+  /* ==========================================
+     CORE BRAND COLORS
+     ========================================== */
+
+  --color-sakura:          #F7A8B8;
+  --color-sakura-deep:     #E879A0;
+
+  --color-indigo:          #3F4E8C;
+  --color-lavender:        #B9A7F5;
+
+  --color-sky:             #7EC8E3;
+  --color-emerald:         #10B981;
+  --color-amber:           #F59E0B;
+
+  --color-warm-white:      #FFFDF8;
+  --color-card-white:      #FFFFFF;
+
+  --color-navy:            #1A1A2E;
+  --color-muted:           #7B7B9A;
+
+  /* ==========================================
+     SEMANTIC UI COLORS
+     Use these throughout components.
+     ========================================== */
+
+  --brand-bg:              var(--color-warm-white);
+  --brand-text:            var(--color-navy);
+
+  --brand-primary:         var(--color-indigo);
+  --brand-accent:          var(--color-lavender);
+
+  --brand-card:            var(--color-card-white);
+
+  --brand-surface:         #FFF0F5;
+  --brand-muted-surface:   #F5F0FA;
+
+  --brand-border:          rgba(63, 78, 140, 0.10);
+
+  /* ==========================================
+     STATE COLORS
+     ========================================== */
+
+  --brand-success:         var(--color-emerald);
+  --brand-warning:         var(--color-amber);
+  --brand-error:           #E53E6D;
+
+  /* ==========================================
+     SIDEBAR COLORS
+     ========================================== */
+
+  --sidebar-bg:            #FFFFFF;
+  --sidebar-text:          var(--color-navy);
+
+  --sidebar-active-bg:     #FFF5F9;
+  --sidebar-active-text:   var(--color-indigo);
+
+  --sidebar-border:        rgba(63, 78, 140, 0.08);
+
+  /* ==========================================
+     INPUTS & FORMS
+     ========================================== */
+
+  --input-bg:              #F9F5FF;
+  --input-border:          rgba(63, 78, 140, 0.10);
+
+  --focus-ring:            var(--color-lavender);
+  --switch-bg:             #D4C5F9;
+
+  /* ==========================================
+     CHART COLORS
+     ========================================== */
+
+  --chart-primary:         var(--color-sakura);
+  --chart-secondary:       var(--color-lavender);
+  --chart-tertiary:        var(--color-sky);
+  --chart-warning:         var(--color-amber);
+  --chart-success:         var(--color-emerald);
+
+  /* ==========================================
+     TYPOGRAPHY
+     ========================================== */
+
+  --font-primary:          'Outfit', sans-serif;
+  --font-secondary:        'Inter', sans-serif;
+  --font-tertiary:         'Noto Sans JP', sans-serif;
+
+  /* Font Sizes */
+
+  --text-xs:               12px;
+  --text-sm:               14px;
+  --text-base:             16px;
+  --text-md:               18px;
+  --text-lg:               24px;
+  --text-xl:               32px;
+  --text-2xl:              48px;
+  --text-3xl:              64px;
+
+  /* Font Weights */
+
+  --weight-regular:        400;
+  --weight-medium:         500;
+  --weight-semibold:       600;
+  --weight-bold:           700;
+
+  /* ==========================================
+     SPACING
+     ========================================== */
+
+  --spacing-xs:            4px;
+  --spacing-sm:            8px;
+  --spacing-md:            16px;
+  --spacing-ml:            24px;
+  --spacing-lg:            32px;
+  --spacing-xl:            64px;
+
+  /* ==========================================
+     LAYOUT
+     ========================================== */
+
+  --max-width:             1440px;
+
+  --tablet-breakpoint:     768px;
+  --mobile-breakpoint:     375px;
+
+  /* ==========================================
+     BORDER RADIUS
+     ========================================== */
+
+  --radius-sm:             4px;
+  --radius-md:             8px;
+  --radius-lg:             16px;
+  --radius-xl:             24px;
+
+  /* ==========================================
+     SHADOWS
+     ========================================== */
+
+  --shadow-sm:
+    0 1px 3px rgba(26, 26, 46, 0.08);
+
+  --shadow-md:
+    0 4px 16px rgba(26, 26, 46, 0.12);
+
+  --shadow-lg:
+    0 8px 32px rgba(26, 26, 46, 0.16);
+}
+
+ /* ==========================================
+    GLOBAL BASE STYLES
+    These apply to the entire platform.
+    ========================================== */
+
+*,
+ *::before,
+ *::after {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+ }
+
+ body {
+    font-family: var(--font-secondary);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-primary);
+}
+ 
