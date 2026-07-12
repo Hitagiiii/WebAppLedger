@@ -14,3 +14,7 @@
     padding: var(--spacing-md);
     flex: 1;
 }
+
+.dashboard-navbar{
+    width: 100%;
+}
