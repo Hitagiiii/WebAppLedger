@@ -1,0 +1,55 @@
+{
+      "expenseBreakdown": [
+    {
+      "category": "Food",
+      "amount": 3450
+    },
+    {
+      "category": "Transportation",
+      "amount": 1500
+    },
+    {
+      "category": "Entertainment",
+      "amount": 2950
+    },
+    {
+      "category": "Shopping",
+      "amount": 1200
+    },
+    {
+      "category": "Bills",
+      "amount": 6500
+    }
+  ],
+
+  "monthlyExpenses": [
+    {
+      "month": "January",
+      "amount": 18500
+    },
+    {
+      "month": "February",
+      "amount": 19400
+    },
+    {
+      "month": "March",
+      "amount": 22300
+    },
+    {
+      "month": "April",
+      "amount": 21500
+    },
+    {
+      "month": "May",
+      "amount": 24200
+    },
+    {
+      "month": "June",
+      "amount": 26100
+    },
+    {
+      "month": "July",
+      "amount": 26450
+    }
+  ]
+}

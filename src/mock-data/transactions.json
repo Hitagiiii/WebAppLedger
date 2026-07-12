@@ -1,0 +1,54 @@
+{
+    "transactions": [
+    {
+      "id": 1,
+      "date": "2026-07-10",
+      "type": "income",
+      "category": "Salary",
+      "description": "Monthly Salary",
+      "paymentMethod": "Bank Transfer",
+      "amount": 30000,
+      "balance": 162450.75
+    },
+    {
+      "id": 2,
+      "date": "2026-07-10",
+      "type": "expense",
+      "category": "Food",
+      "description": "Lunch at Ramen House",
+      "paymentMethod": "GCash",
+      "amount": 450,
+      "balance": 162000.75
+    },
+    {
+      "id": 3,
+      "date": "2026-07-09",
+      "type": "expense",
+      "category": "Transportation",
+      "description": "Grab Ride",
+      "paymentMethod": "GCash",
+      "amount": 280,
+      "balance": 162281.75
+    },
+    {
+      "id": 4,
+      "date": "2026-07-08",
+      "type": "expense",
+      "category": "Gaming",
+      "description": "Steam Purchase",
+      "paymentMethod": "Visa",
+      "amount": 1200,
+      "balance": 162561.75
+    },
+    {
+      "id": 5,
+      "date": "2026-07-08",
+      "type": "income",
+      "category": "Freelance",
+      "description": "Logo Design Project",
+      "paymentMethod": "PayPal",
+      "amount": 8500,
+      "balance": 163761.75
+    }
+  ]
+}

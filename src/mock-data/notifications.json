@@ -1,0 +1,16 @@
+{
+"notifications": [
+    {
+      "id": 1,
+      "title": "Budget Warning",
+      "message": "You've used 85% of your Food budget.",
+      "type": "warning"
+    },
+    {
+      "id": 2,
+      "title": "Salary Received",
+      "message": "Your monthly salary has been added.",
+      "type": "success"
+    }
+  ]
+}

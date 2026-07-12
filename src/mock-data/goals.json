@@ -1,0 +1,18 @@
+{
+"goals": [
+    {
+      "id": 1,
+      "title": "Gaming PC Upgrade",
+      "target": 70000,
+      "saved": 42500,
+      "deadline": "2026-12-31"
+    },
+    {
+      "id": 2,
+      "title": "Japan Trip",
+      "target": 120000,
+      "saved": 35000,
+      "deadline": "2027-06-01"
+    }
+  ]
+}
