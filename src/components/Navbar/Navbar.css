@@ -1,0 +1,18 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-right{
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-md);
+}
+
+.navbar-left{
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-md);
+}
+
