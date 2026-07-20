@@ -10,11 +10,43 @@
     flex-shrink: 0;
 }
 
-.dashboard-content{
-    padding: var(--spacing-md);
+.dashboard-content-column{
     flex: 1;
 }
 
 .dashboard-navbar{
     width: 100%;
+}
+
+.dashboard-statcard{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: var(--spacing-md);
+    padding: var(--spacing-ml);
+}
+
+.dashboard-graphs{
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-md)
+}
+
+.dashboard-graphs-left {
+    flex: 1.3;     
+    min-width: 0;
+}
+
+
+.dashboard-graphs-right {
+
+    flex: 0.7;     
+    min-width: 0;
+}
+
+.dashboard-contentsection{
+    padding: var(--spacing-ml);
 }

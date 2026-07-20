@@ -1,0 +1,25 @@
+.statcard{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 136px;
+    padding: var(--spacing-lg);
+    align-items: flex-start;
+    border: 1px solid var(--color-muted);
+    border-radius: var(--spacing-md);
+    gap: var(--spacing-md);
+}
+
+.statcard-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.statcard-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}

@@ -1,0 +1,36 @@
+.usercard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    padding: var(--spacing-lg);
+    margin:  auto;
+    box-sizing: border-box;
+    border: 1px solid var(--color-muted);
+    border-radius: var(--radius-ml);
+
+    background-image: url('/src/assets/components/UserCard/background.png');
+}
+
+.usercard-welcome{
+    color: var(--color-sakura);
+    font: var(--font-secondary);
+    font-size: var(--text-sm);
+    font-weight: var(--weight-regular);
+    line-height: 20px;
+}
+
+.usercard-time{
+    color: var(--color-warm-white);
+    font: var(--font-secondary);
+    font-size: var(--text-lg);
+    font-weight: var(--weight-bold);
+    line-height: 32px;
+}
+
+.usercard-quote{
+    font-size: var(--text-sm);
+    color: #d1d1cf;
+    font-weight: var(--weight-regular);
+    line-height: 20px;
+}

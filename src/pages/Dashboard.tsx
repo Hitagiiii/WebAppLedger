@@ -1,5 +1,10 @@
 import Navbar from "../components/Navbar/Navbar";
 import Sidebar from "../components/Sidebar/Sidebar";
+import StatCard from "../components/StatCard/StatCard";
+import UserCard from "../components/UserCard/UserCard";
+import ReChartsPlaceholder from "./../components/ReChartsPlaceholder/ReChartsPlaceholder"
+
+import { GrStatusPlaceholder } from "react-icons/gr";
 
 import './Dashboard.css';
 
@@ -14,22 +19,81 @@ export default function Dashboard() {
       </div>
 
         {/* Content Column */}
-        <div className="dashboard-content">
+        <div className="dashboard-content-column">
         
           {/* Navbar */}
           <section className="dashboard-navbar">
             <Navbar
               userName= "userName"
-              notifications = 'n'
-              userProfile = 'up'
-              userBalance=" balance"
+              userBalance= ""
             />
           </section>
           
 
           {/* Dashboard content goes here */}
-        <h1 className="dashboard-content-title">Dashboard</h1>
-        <p className="dashboard-content-placeholder"> Component pending implementation. </p>
+          <section className="dashboard-contentsection">
+            
+            {/* UserCard */}
+            <section className="dashboard-usercard">
+              <UserCard/>
+            </section>
+
+            {/* StatCard */}
+            <section className="dashboard-statcard">
+              <StatCard
+              icon = {<GrStatusPlaceholder />}
+              label ='label placeholder'
+              value = 'value'
+              analysis= 'analysis'
+              />
+
+              <StatCard
+              icon = {<GrStatusPlaceholder />}
+              label ='label placeholder'
+              value = 'value'
+              analysis= 'analysis'
+              />
+
+              <StatCard
+              icon = {<GrStatusPlaceholder />}
+              label ='label placeholder'
+              value = 'value'
+              analysis= 'analysis'
+              />
+
+              <StatCard
+              icon = {<GrStatusPlaceholder />}
+              label ='label placeholder'
+              value = 'value'
+              analysis= 'analysis'
+              />
+
+              <StatCard
+              icon = {<GrStatusPlaceholder />}
+              label ='label placeholder'
+              value = 'value'
+              analysis= 'analysis'
+              />
+
+              <StatCard
+              icon = {<GrStatusPlaceholder />}
+              label ='label placeholder'
+              value = 'value'
+              analysis= 'analysis'
+              />
+            </section>
+            
+            <section className="dashboard-graphs">
+              <div className="dashboard-graphs-left">
+                <ReChartsPlaceholder/>
+              </div>
+              <div className="dashboard-graphs-right">
+                <ReChartsPlaceholder/>
+              </div>
+            </section>
+
+
+          </section>
         </div>
 
     </div>
