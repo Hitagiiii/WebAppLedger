@@ -4,7 +4,28 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>webappledger</title>
+    <meta
+      name="description"
+      content="Sakura Ledger — an anime-inspired personal finance ledger for tracking income, expenses, budgets, savings goals and debts."
+    />
+    <title>Sakura Ledger</title>
+    <script>
+      // Apply the persisted theme before first paint to avoid a flash.
+      try {
+        var raw = localStorage.getItem('sakura-ledger:db:v1');
+        if (raw) {
+          var db = JSON.parse(raw);
+          if (db && db.settings && db.settings.theme) {
+            document.documentElement.dataset.theme = db.settings.theme;
+            document.documentElement.style.colorScheme = db.settings.theme;
+          }
+        } else {
+          document.documentElement.dataset.theme = 'light';
+        }
+      } catch (e) {
+        document.documentElement.dataset.theme = 'light';
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

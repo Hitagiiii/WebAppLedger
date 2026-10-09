@@ -159,6 +159,53 @@
     0 8px 32px rgba(26, 26, 46, 0.16);
 }
 
+/* ==========================================
+   DARK THEME
+   Deep navy/charcoal surfaces with muted
+   pink + lavender accents. Applied via
+   <html data-theme="dark">.
+   ========================================== */
+
+[data-theme='dark'] {
+  --brand-bg:              #0F1222;
+  --brand-text:            #ECECF6;
+
+  --brand-primary:         #7D8CD8;
+  --brand-accent:          #B9A7F5;
+
+  --brand-card:            #181C31;
+  --brand-surface:         #262033;
+  --brand-muted-surface:   #1F2340;
+
+  --brand-border:          rgba(185, 167, 245, 0.18);
+
+  --brand-success:         #34D399;
+  --brand-warning:         #FBBF24;
+  --brand-error:           #FB7185;
+
+  --sidebar-bg:            #141830;
+  --sidebar-text:          #E4E4F2;
+  --sidebar-active-bg:     #2A2338;
+  --sidebar-active-text:   #F7A8B8;
+  --sidebar-border:        rgba(185, 167, 245, 0.14);
+
+  --input-bg:              #1D2139;
+  --input-border:          rgba(185, 167, 245, 0.20);
+
+  --focus-ring:            #B9A7F5;
+  --switch-bg:             #4B4276;
+
+  --color-muted:           #9AA0C0;
+  --color-navy:            #ECECF6;
+
+  --shadow-sm:
+    0 1px 3px rgba(0, 0, 0, 0.45);
+  --shadow-md:
+    0 4px 16px rgba(0, 0, 0, 0.5);
+  --shadow-lg:
+    0 8px 32px rgba(0, 0, 0, 0.6);
+}
+
  /* ==========================================
     GLOBAL BASE STYLES
     These apply to the entire platform.

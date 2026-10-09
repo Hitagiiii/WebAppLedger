@@ -1,0 +1,61 @@
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--brand-bg);
+  /* Soft atmospheric backdrop: sakura light on warm paper */
+  background-image:
+    radial-gradient(1000px 500px at 85% -10%, rgba(185, 167, 245, 0.14), transparent 60%),
+    radial-gradient(800px 420px at -5% 10%, rgba(247, 168, 184, 0.16), transparent 55%);
+  background-attachment: fixed;
+}
+
+.app-sidebar {
+  flex: 0 0 260px;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  height: 100vh;
+}
+
+.app-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-content {
+  flex: 1;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--spacing-ml);
+}
+
+.app-content:focus {
+  outline: none;
+}
+
+.sidebar-scrim {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(26, 26, 46, 0.45);
+  z-index: 95;
+}
+
+@media (max-width: 960px) {
+  .app-sidebar {
+    flex: 0 0 0;
+    width: 0;
+    position: static;
+    height: auto;
+  }
+
+  .app-sidebar.is-open .sidebar {
+    transform: translateX(0);
+  }
+
+  .app-content {
+    padding: var(--spacing-md);
+  }
+}

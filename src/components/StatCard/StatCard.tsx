@@ -1,19 +1,6 @@
 import type React from 'react';
 import './StatCard.css'
 
-import StatCardGraph from './components/StatCardGraph';
-
-//userData
-type userDataSchedma = {
-    summary:{
-        "currentBalance": number;
-        "monthlyIncome": number;
-        "monthlyExpenses": number;
-        "monthlySavings": number;
-        "financialHealth": number;
-    };
-}
-
 type StatCardItems ={
     icon?: React.ReactNode;
     label: string;

@@ -16,7 +16,7 @@ export default function UserCard(){
     return(
         <div className='usercard'>
             <div className='usercard-welcome'>
-                Welcome back,{data.user.name}
+                Welcome back, {data.user.name}!
             </div>
             <div className='usercard-time'>
                 Good Day!
