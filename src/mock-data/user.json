@@ -1,0 +1,16 @@
+{
+  "user": {
+    "id": 1,
+    "name": "Kazu",
+    "email": "kazu@example.com",
+    "currency": "PHP",
+    "avatar": "/avatars/default.png"
+  },
+  "summary": {
+    "currentBalance": 152450.75,
+    "monthlyIncome": 45000.0,
+    "monthlyExpenses": 26450.5,
+    "monthlySavings": 18549.5,
+    "financialHealth": 89
+  }
+}

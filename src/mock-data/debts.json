@@ -1,0 +1,22 @@
+{
+"debts": {
+    "iOwe": [
+      {
+        "id": 1,
+        "person": "Metrobank Credit Card",
+        "amount": 15000,
+        "remaining": 8000,
+        "dueDate": "2026-07-30"
+      }
+    ],
+    "owedToMe": [
+      {
+        "id": 2,
+        "person": "John Cruz",
+        "amount": 5000,
+        "remaining": 2000,
+        "dueDate": "2026-08-15"
+      }
+    ]
+  }
+}

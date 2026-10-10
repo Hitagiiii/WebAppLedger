@@ -1,1 +1,3 @@
 @import "./styles/variables.css";
+@import "./styles/app.css";
+@import "./components/ui/ui.css";
